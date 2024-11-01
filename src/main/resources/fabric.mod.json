@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "all-in-one-stone-tools",
+	"version": "${version}",
+	"name": "All In One Stone Tools",
+	"description": "\"All in One Stone Tools\" brings a fresh take on Minecraft mining by letting players craft pickaxes from actual stone types. Create tools like the Cobblestone Pickaxe, Stone Pickaxe, Diorite Pickaxe, and Granite Pickaxe, each with unique abilities, from faster mining speeds to specialized ore gathering, while keeping the familiar durability and power of traditional stone tools.",
+	"authors": [
+		"KyfStore"
+	],
+	"contact": {
+		"homepage": "https://kyfstore.com/",
+		"sources": "https://github.com/KyfStore11k/All-In-One-Stone-Tools-1.21.1"
+	},
+	"license": "MIT",
+	"icon": "assets/all-in-one-stone-tools/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.kyfstore.fabricmc.AllInOneStoneTools"
+		],
+		"fabric-datagen": [
+			"com.kyfstore.fabricmc.AllInOneStoneToolsDataGenerator"
+		]
+	},
+	"mixins": [
+		"all-in-one-stone-tools.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
