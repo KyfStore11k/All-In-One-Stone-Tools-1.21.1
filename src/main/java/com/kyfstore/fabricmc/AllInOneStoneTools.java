@@ -1,5 +1,7 @@
 package com.kyfstore.fabricmc;
 
+import com.kyfstore.fabricmc.block.ModBlocks;
+import com.kyfstore.fabricmc.item.ModItemGroups;
 import com.kyfstore.fabricmc.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,6 +14,9 @@ public class AllInOneStoneTools implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

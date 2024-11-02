@@ -17,7 +17,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        AllInOneStoneTools.LOGGER.info("Registering Mod Items For " + AllInOneStoneTools.MOD_ID);
+        AllInOneStoneTools.LOGGER.info("Registering Mod Items for " + AllInOneStoneTools.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(PINK_GARNET);
